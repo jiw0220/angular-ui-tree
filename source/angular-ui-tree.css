@@ -26,34 +26,54 @@
     position: relative;
     margin: 0;
     padding: 0;
-    line-height: 2.125em;
+    line-height: 40px;
+}
+
+.angular-ui-tree-wrapper {
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 200px;
+    line-height: 40px;
+    padding-left: 30px;
+    padding-right: 90px;
+}
+
+.angular-ui-tree-toggle {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin-top: -14px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.angular-ui-tree-text {
+    margin: 0;
+}
+
+.angular-ui-tree-wrapper:hover > .angular-ui-tree-btn-container {
+    display: block;
 }
 
 .angular-ui-tree-hidden {
     display: none
 }
 
-.angular-ui-tree-placeholder {
-    margin: 5px 0;
-    padding: 0;
-    line-height: 2.125em;
-}
-
 .angular-ui-tree-handle {
-    cursor: pointer;
-    white-space: nowrap;
+    cursor: move;
     text-decoration: none;
+    font-weight: bold;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    position: relative;
-    line-height: 34px;
-    padding-left: .7em;
-    padding-right: 5.5em;
-}
-
-.angular-ui-tree-handle:hover > .angular-ui-tree-btn-container {
-    display: block;
+    min-height: 20px;
+    line-height: 20px;
 }
 
 .angular-ui-tree-drag {
